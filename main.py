@@ -20,8 +20,8 @@ cryptos = {
     'Ripple': 'ripple'
 }
 
-help = """Сообщить об ошибке - @frozziiii_bot
-Связь с владельцем - @frozziiii_bot"""
+help = """Сообщить об ошибке - @user
+Связь с владельцем - @user"""
 
 commands = """/commands - список команд✏
 /rate - курс криптовалют
