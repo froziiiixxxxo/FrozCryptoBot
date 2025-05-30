@@ -3,11 +3,11 @@ from telebot import types
 import requests
 
 # Вставьте сюда ваш токен бота
-TOKEN = '7587256412:AAGjo6mYs4pZuyuF-4zJQLk3ZNtCYQyOSDc'
+TOKEN = 'my token'
 
 bot = telebot.TeleBot(TOKEN)
 
-# Список криптовалют с их идентификаторами на CoinGecko
+# Список криптовалют на CoinGecko
 cryptos = {
     'Bitcoin': 'bitcoin',
     'Ethereum': 'ethereum',
@@ -45,7 +45,7 @@ def handle_start(message):
 def callback(call):
     if call.message:
         if call.data == 'rate':
-            # Обработка нажатия на кнопку "Узнать курс"
+            # Обработка нажатия 'Узнать курс'
             try:
                 ids = ','.join(cryptos.values())
                 url = 'https://api.coingecko.com/api/v3/simple/price'
